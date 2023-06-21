@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="icon" type="image/x-icon" href="Img/zHc2vQD.ico">
+    <title>Fire emblem Fates Convo Generator</title>
+</head>
+<body>
+    <center>
+        <h1>Fire emblem Fates Convo Generator v0.1</h1>
+    </center>
+
+<div class="scene">
+    <canvas id="charB" class="charB" width="512" height="512">Character on the left</canvas>
+    <canvas id="charA" class="charA" width="512" height="512">Character on the right</canvas>
+    <canvas class="background" id="bg" width="1024" height="512">Background image</canvas>
+    <div class="text" id="text">  
+        <canvas class="text-box" id="text-box" width="1024" height="512">Text-box</canvas>
+        <canvas class="name-box" id="name-box" width="1024" height="512"></canvas>
+        <div class="name-tag" id="name-tag">Kadem</div>
+        <div class="text-box" id="text-box-text">TODAY IS FRYDAY IN CALIFORNIA</div>
+    </div>
+</div>
+
+<div>
+    <button id="btn">click me!!</button>
+    <select name="text-box-style" id="text-box-style">
+        <option value="0">Valla</option>
+        <option value="1">Hoshidian</option>
+        <option value="2">Nohrian</option>
+    </select>
+</div>
+<input type="text" name="text" id="text-input">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="script/script.js" type="module"></script>
+</body>
+</html>

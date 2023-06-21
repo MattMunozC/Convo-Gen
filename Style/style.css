@@ -1,0 +1,66 @@
+@font-face {
+    font-family: 'fireemblemfont';
+    src: url("./3666-font.otf") format("opentype");
+}
+body{
+    color: transparent;
+    text-shadow: 0 0 2px #000;
+    font-family: 'fireemblemfont';
+    background-color: rgb(51,68,32);
+}
+div.scene{
+   position: relative;
+   width: 1024px;
+   height: 512px;
+   margin: auto;
+}
+div.name-tag{
+    position: absolute;
+    z-index: 4;
+    color: white;
+    top: 346px;
+    left: 45px;
+    font-size: 24px;
+    text-align: center;
+    height: 45px;
+    width: 224px;
+}
+div.text-box{
+    position: absolute;
+    z-index: 4;
+    padding: 20px;
+    font-size: 24px;
+    top: 386px;
+    left: 63px;
+    height: 82px;
+    width: 857px;
+    color: rgb(80, 3, 3) ;
+    overflow: hidden;
+}
+canvas.charA{
+    position: absolute;
+    z-index: 1;
+    right: 0px;
+
+}
+canvas.charB{
+    position: absolute;
+    z-index: 1;
+    left: 0px;
+}
+canvas.background{
+    position: absolute;
+    left: 0;
+}
+canvas.text-box{
+    position: absolute;
+    left:  62px;
+    z-index: 2;
+}
+canvas.name-box{
+    position: absolute;
+    z-index: 3;
+
+    top: 344px;
+    left: 45px;
+}
